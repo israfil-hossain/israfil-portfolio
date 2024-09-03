@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36" id="/">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -56,18 +56,38 @@ const Hero = () => {
             words="Transforming Concepts into Seamless User Experiences"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
-          <Image src="/avater.png" alt="avater" width={100} height={100} className="rounded-full "/>
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Israfil, a Next.js Developer based in Bangladesh.
+          <Image
+            src="/avater.png"
+            alt="avater"
+            width={100}
+            height={100}
+            className="rounded-full "
+          />
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl pt-3">
+            Hi! I&apos;m Israfil, Software Engineer based in Bangladesh.
           </p>
-
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex justify-center space-x-5">
+            <a href="#about">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+            <a
+              href={
+                "https://www.canva.com/design/DAGJEegqE20/wXDT6hG53dFy5sTIQttbjg/view?utm_content=DAGJEegqE20&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MagicButton
+                title="View my Resume"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
